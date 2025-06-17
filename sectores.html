@@ -26,7 +26,7 @@
             }
 
             var data = response.getDataTable();
-            var chart = new google.visualization.PieChart(document.getElementById('chart_div'));
+            var chart = new google.visualization.ColumnChart(document.getElementById('chart_div'));
             chart.draw(data, { title:"Finanzas", titleFontSize:40, width: '100%', isStacked: true
             ,hAxis: {title: "Gastos", titleColor:'#00ff00', titleFontSize:20}
             ,vAxis: {title: "Euros", titleColor:'#00ff00', titleFontSize:20}} 
